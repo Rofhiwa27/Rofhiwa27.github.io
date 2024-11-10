@@ -1,10 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <h1>Hello World</h1>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#chess">My Chess rating</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to My Online Universe</h1>
+      <p>
+        I'm Rofhiwa Percy, a passionate Scientist and chess enthusiast. The universe awaits.
+    </p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a...</p>
+  </section>
+
+  <!-- Chess Profiles Section -->
+  <section id="chess" class="chess">
+    <h2>Chess Profiles</h2>
+    <div class="chess-container">
+      <div class="chess-profile" id="chesscom-profile">
+        <h3>Chess.com Profile</h3>
+        <div class="profile-details">
+          <p><strong>Username:</strong> <span id="chesscom-username">Loading...</span></p>
+          <p><strong>Rating:</strong> <span id="chesscom-rating">Loading...</span></p>
+          <p><strong>Status:</strong> <span id="chesscom-status">Loading...</span></p>
+          <p><strong>Games Played:</strong> <span id="chesscom-games">Loading...</span></p>
+        </div>
+      </div>
+      <div class="chess-profile" id="lichess-profile">
+        <h3>Lichess Profile</h3>
+        <div class="profile-details">
+          <p><strong>Username:</strong> <span id="lichess-username">Loading...</span></p>
+          <p><strong>Rating:</strong> <span id="lichess-rating">Loading...</span></p>
+          <p><strong>Status:</strong> <span id="lichess-status">Loading...</span></p>
+          <p><strong>Games Played:</strong> <span id="lichess-games">Loading...</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <p>Commin soon...</p>
+</section>
+
+  <footer>
+    <p>&copy; 2024 Rofhiwa Netshilongwe. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
