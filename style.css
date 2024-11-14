@@ -94,4 +94,6 @@ header nav a {
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
+    position: absolute;
+    bottom: 0;
   }
