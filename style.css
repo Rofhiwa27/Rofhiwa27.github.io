@@ -1,18 +1,12 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-  }
-  
-  /* Navbar */
-  .navbar {
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -23,19 +17,12 @@
     align-items: center;
     color: #fff;
     z-index: 1000;
-    overflow: hidden; /* Hide moving particles that go outside the navbar */
+    overflow: hidden; 
   }
   
   .navbar-container {
     display: flex;
     align-items: center;
-  }
-  
-  .nav-logo {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #fff;
-    text-decoration: none;
   }
   
   .nav-links {
@@ -54,138 +41,53 @@
   .nav-links li a:hover {
     color: #888;
   }
-  
-  /* Hero Section */
-  .hero {
-    width: 100vw;  
-    height: 80vh;
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    padding-top: 50px;
-    position: relative; /* To hold the animated background */
-    overflow: hidden; /* Hide particles that go beyond the section */
-  }
-  
-  .hero-content h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 0.8rem;
-  }
-  
-  .hero-content p {
-    font-size: 1rem;
-    font-weight: 300;
-  }
-  
-  /* Animated Background for Navbar */
-  .navbar::before,
-  .navbar::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(white, transparent 40%);
-    opacity: 0.2;
-    animation: drift 20s linear infinite;
-    pointer-events: none;
-    z-index: -1;
-  }
-  
-  .navbar::after {
-    animation-delay: -10s;
-    transform: rotate(180deg);
-  }
-  
-  /* Drift animation */
-  @keyframes drift {
-    0% {
-      transform: translate(0, 0);
-    }
-    100% {
-      transform: translate(-50%, -50%);
-    }
-  }
-  
-  /* Animated Background for Hero Section */
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(white, transparent 30%);
-    opacity: 0.1;
-    animation: hero-drift 30s linear infinite;
-    pointer-events: none;
-    z-index: -1;
-  }
-  
-  /* Hero Drift Animation */
-  @keyframes hero-drift {
-    0% {
-      transform: translate(0, 0);
-    }
-    100% {
-      transform: translate(-20%, -20%);
-    }
-  }
-  
-  /* Section Styles */
-  section {
-    padding: 3rem 2rem;
-    max-width: 100vw;
-    margin: auto;
-  }
-  
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 1.2rem;
-    color: #000;
-    text-align: center;
-  }
-  
-  /* Chess Profiles Section */
-  .chess-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
-  
-  .chess-profile {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1.5rem;
-    width: 280px;
-    text-align: center;
-    transition: background-color 0.3s ease;
-  }
-  
-  .chess-profile:hover {
-    background-color: #f1f1f1;
-  }
-  
-  .chess-profile h3 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    color: #000;
-  }
-  
-  .profile-details p {
-    font-size: 1rem;
-    color: #444;
-    margin: 0.6rem 0;
-  }
-  
-  /* Footer */
+header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.construction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  color: #333;
+}
+
+.construction-message {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.under-construction-icon {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  width: 80%;
+  height: 15px;
+  background-color: #ddd;
+  border-radius: 25px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  width: 43%;
+  background-color: #3498db;
+  border-radius: 25px;
+  text-align: center;
+  color: white;
+  line-height: 15px;
+}
+
+/* Footer */
   footer {
     background-color: #000;
     color: white;
