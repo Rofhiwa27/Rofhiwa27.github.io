@@ -17,14 +17,13 @@ body {
     align-items: center;
     color: #fff;
     z-index: 1000;
-    overflow: hidden; 
+    overflow: hidden; /* Hide moving particles that go outside the navbar */
   }
   
   .navbar-container {
     display: flex;
     align-items: center;
   }
-  
   .nav-links {
     display: flex;
     list-style: none;
@@ -63,7 +62,8 @@ header nav a {
 }
 
 .under-construction-icon {
-  width: 80px;
+  font-size: 5rem;
+  color: #f39c12;
   margin-bottom: 20px;
 }
 
@@ -79,7 +79,7 @@ header nav a {
 .progress-bar span {
   display: block;
   height: 100%;
-  width: 43%;
+  width: 40%; /* Adjust progress */
   background-color: #3498db;
   border-radius: 25px;
   text-align: center;
